@@ -93,6 +93,7 @@
                 ],
                 "sameAs": [
                     "https://github.com/cyanboy",
+                    "https://github.com/mathiasror",
                     "https://www.linkedin.com/in/mathiasror"
                 ]
             }
@@ -144,6 +145,7 @@
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#skills">Skills</a></li>
+                    <li><a href="#security-research">Security Research</a></li>
                     <li><a href="#education">Education</a></li>
                 </ul>
             </nav>
@@ -292,45 +294,97 @@
                 </article>
             </section>
 
-            <section id="skills" class="card">
-                <h2>Core Skills</h2>
-                <article>
-                    <h3>Programming</h3>
-                    <ul class="pill-list">
-                        <li>Rust</li>
-                        <li>Kotlin</li>
-                        <li>Java</li>
-                        <li>TypeScript / JavaScript</li>
-                        <li>Python</li>
-                    </ul>
-                    <h3>Tools &amp; Platforms</h3>
-                    <ul class="pill-list">
-                        <li>GitHub</li>
-                        <li>GitHub Advanced Security</li>
-                        <li>GitLab</li>
-                        <li>Burp Suite</li>
-                        <li>Docker</li>
-                        <li>Kubernetes</li>
-                        <li>AWS</li>
-                        <li>GCP</li>
-                        <li>Datadog</li>
-                    </ul>
-                    <h3>Security &amp; Methodologies</h3>
-                    <ul class="pill-list">
-                        <li>Ethical Hacking</li>
-                        <li>Secure Development Practices</li>
-                        <li>Threat Modeling</li>
-                        <li>Incident Response</li>
-                        <li>Vulnerability Research</li>
-                        <li>Product Development</li>
-                        <li>Agile</li>
-                        <li>Cloud Security Fundamentals</li>
-                    </ul>
-                </article>
-            </section>
-
             <section id="projects" class="card">
                 <h2>Projects</h2>
+                <article class="project">
+                    <header>
+                        <div>
+                            <h3>turbo-bible</h3>
+                            <p class="tenure">Rust &middot; MIT/Apache-2.0</p>
+                        </div>
+                        <div class="project-links">
+                            <a
+                                href="https://turbo.bible"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                aria-label="Visit turbo.bible (opens in new tab)"
+                                class="project-link"
+                                >turbo.bible<span
+                                    class="external-link-icon"
+                                    aria-hidden="true"
+                                >
+                                    ↗</span
+                                ></a
+                            >
+                            <a
+                                href="https://github.com/mathiasror/turbo-bible"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                aria-label="View turbo-bible on GitHub (opens in new tab)"
+                                class="project-link"
+                                >View on GitHub<span
+                                    class="external-link-icon"
+                                    aria-hidden="true"
+                                >
+                                    ↗</span
+                                ></a
+                            >
+                        </div>
+                    </header>
+                    <p>
+                        A Turbo Vision&ndash;styled Bible reader for the
+                        terminal, shipping eleven translations across seven
+                        languages. Instant full-text search, side-by-side
+                        compare panes with word-level diff highlighting,
+                        cross-references, and a full vim keymap &mdash; fully
+                        offline, with the King James Version embedded in the
+                        binary. Installs via curl, Homebrew, or cargo.
+                    </p>
+                    <ul class="pill-list">
+                        <li>Rust</li>
+                        <li>TUI</li>
+                        <li>SQLite FTS5</li>
+                        <li>Vim Keymap</li>
+                    </ul>
+                </article>
+                <article class="project">
+                    <header>
+                        <div>
+                            <h3>varde</h3>
+                            <p class="tenure">Nix &middot; Apache-2.0</p>
+                        </div>
+                        <a
+                            href="https://github.com/mathiasror/varde"
+                            rel="noopener noreferrer"
+                            target="_blank"
+                            aria-label="View varde on GitHub (opens in new tab)"
+                            class="project-link"
+                            >View on GitHub<span
+                                class="external-link-icon"
+                                aria-hidden="true"
+                            >
+                                ↗</span
+                            ></a
+                        >
+                    </header>
+                    <p>
+                        Minimal, distroless container base images built with
+                        Nix &mdash; no shell, no package manager, and a
+                        non-root user in every image. Covers JVM, Python, and
+                        Node runtimes plus nginx, Redis, and compiled-binary
+                        bases, with musl by default and glibc one tag away.
+                        Every image is keyless-signed with cosign and ships a
+                        CycloneDX SBOM attestation. A <i>varde</i> is
+                        Norwegian for a cairn: the smallest stack of stones
+                        that marks the trail.
+                    </p>
+                    <ul class="pill-list">
+                        <li>Nix</li>
+                        <li>Containers</li>
+                        <li>Distroless</li>
+                        <li>Supply-Chain Security</li>
+                    </ul>
+                </article>
                 <article class="project">
                     <header>
                         <div>
@@ -368,6 +422,84 @@
                 </article>
             </section>
 
+            <section id="skills" class="card">
+                <h2>Core Skills</h2>
+                <article>
+                    <h3>Programming</h3>
+                    <ul class="pill-list">
+                        <li>Rust</li>
+                        <li>Kotlin</li>
+                        <li>Java</li>
+                        <li>TypeScript / JavaScript</li>
+                        <li>Python</li>
+                    </ul>
+                    <h3>Tools &amp; Platforms</h3>
+                    <ul class="pill-list">
+                        <li>GitHub</li>
+                        <li>GitHub Advanced Security</li>
+                        <li>GitLab</li>
+                        <li>Burp Suite</li>
+                        <li>Docker</li>
+                        <li>Kubernetes</li>
+                        <li>Nix</li>
+                        <li>AWS</li>
+                        <li>GCP</li>
+                        <li>Datadog</li>
+                    </ul>
+                    <h3>Security &amp; Methodologies</h3>
+                    <ul class="pill-list">
+                        <li>Ethical Hacking</li>
+                        <li>Secure Development Practices</li>
+                        <li>Threat Modeling</li>
+                        <li>Incident Response</li>
+                        <li>Vulnerability Research</li>
+                        <li>Product Development</li>
+                        <li>Agile</li>
+                        <li>Cloud Security Fundamentals</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section id="security-research" class="card">
+                <h2>Security Research</h2>
+                <article class="project">
+                    <header>
+                        <div>
+                            <h3>Open Redirect in DataHub</h3>
+                            <p class="tenure">
+                                GHSA-phm8-vwjg-f442 &middot; Moderate
+                                severity &middot; 2025
+                            </p>
+                        </div>
+                        <a
+                            href="https://github.com/datahub-project/datahub/security/advisories/GHSA-phm8-vwjg-f442"
+                            rel="noopener noreferrer"
+                            target="_blank"
+                            aria-label="View advisory on GitHub (opens in new tab)"
+                            class="project-link"
+                            >View advisory<span
+                                class="external-link-icon"
+                                aria-hidden="true"
+                            >
+                                ↗</span
+                            ></a
+                        >
+                    </header>
+                    <p>
+                        Discovered and responsibly disclosed an open redirect
+                        vulnerability (CWE-601) in DataHub's
+                        BasePathRedirectFilter. Unsanitised path parameters
+                        allowed attackers to craft URLs that redirected users
+                        to untrusted sites. Fixed in DataHub v1.4.0.3.
+                    </p>
+                    <ul class="pill-list">
+                        <li>Responsible Disclosure</li>
+                        <li>CWE-601</li>
+                        <li>Open Redirect</li>
+                    </ul>
+                </article>
+            </section>
+
             <section id="education" class="card">
                 <h2>Education</h2>
                 <article class="education">
@@ -390,8 +522,8 @@
 
         <footer class="site-footer">
             <small>
-                Last updated <time datetime="2025-12-04">Dec 4, 2025</time>.
-                Copyright &copy; 2025 | All Rights Reserved
+                Last updated <time datetime="2026-07-02">Jul 2, 2026</time>.
+                Copyright &copy; 2026 | All Rights Reserved
             </small>
         </footer>
     </body>

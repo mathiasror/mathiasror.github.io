@@ -282,6 +282,13 @@ p {
     white-space: nowrap;
 }
 
+.project-links {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
 .pill-list {
     list-style: none;
     display: flex;
