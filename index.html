@@ -465,7 +465,47 @@
                 <article class="project">
                     <header>
                         <div>
-                            <h3>Open Redirect in DataHub</h3>
+                            <h3>Open Redirect in DataHub (redirect_uri)</h3>
+                            <p class="tenure">
+                                GHSA-3p57-xxv6-6wqp &middot; Moderate
+                                severity &middot; 2026
+                            </p>
+                        </div>
+                        <a
+                            href="https://github.com/datahub-project/datahub/security/advisories/GHSA-3p57-xxv6-6wqp"
+                            rel="noopener noreferrer"
+                            target="_blank"
+                            aria-label="View advisory on GitHub (opens in new tab)"
+                            class="project-link"
+                            >View advisory<span
+                                class="external-link-icon"
+                                aria-hidden="true"
+                            >
+                                ↗</span
+                            ></a
+                        >
+                    </header>
+                    <p>
+                        Discovered and responsibly disclosed an open redirect
+                        vulnerability (CWE-601) in DataHub's authenticate
+                        endpoint. The unvalidated redirect_uri parameter
+                        allowed triple-slash payloads to bypass relative-path
+                        restrictions and redirect authenticated users to
+                        attacker-controlled sites. Fixed in DataHub v1.5.0.
+                    </p>
+                    <ul class="pill-list">
+                        <li>Responsible Disclosure</li>
+                        <li>CWE-601</li>
+                        <li>Open Redirect</li>
+                    </ul>
+                </article>
+                <article class="project">
+                    <header>
+                        <div>
+                            <h3>
+                                Open Redirect in DataHub
+                                (BasePathRedirectFilter)
+                            </h3>
                             <p class="tenure">
                                 GHSA-phm8-vwjg-f442 &middot; Moderate
                                 severity &middot; 2025
